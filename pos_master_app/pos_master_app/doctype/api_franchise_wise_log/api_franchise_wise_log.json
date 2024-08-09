@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-13 19:24:47.029019",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "franchise_name",
+  "start_time",
+  "end_time",
+  "api_time",
+  "error_log"
+ ],
+ "fields": [
+  {
+   "fieldname": "franchise_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Franchise Name"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "End Time"
+  },
+  {
+   "fieldname": "error_log",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Error Log"
+  },
+  {
+   "fieldname": "api_time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "API Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-28 17:45:12.464805",
+ "modified_by": "Administrator",
+ "module": "POS master APP",
+ "name": "API Franchise Wise Log",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

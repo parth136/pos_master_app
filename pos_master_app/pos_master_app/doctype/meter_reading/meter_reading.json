@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 11:16:25.462757",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "posting_date",
+  "opening_meter_reading",
+  "closing_meter_reading",
+  "total",
+  "franchise_doctype_id",
+  "franchise_code",
+  "franchise_name",
+  "creation_time",
+  "modified_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "opening_meter_reading",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Opening Meter Reading"
+  },
+  {
+   "fieldname": "closing_meter_reading",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Closing Meter Reading"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Water Dispensed"
+  },
+  {
+   "fieldname": "franchise_doctype_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "franchise_doctype_id"
+  },
+  {
+   "fieldname": "franchise_code",
+   "fieldtype": "Data",
+   "label": "Franchise Code"
+  },
+  {
+   "fieldname": "franchise_name",
+   "fieldtype": "Data",
+   "label": "Franchise Name"
+  },
+  {
+   "fieldname": "creation_time",
+   "fieldtype": "Datetime",
+   "label": "Creation Time"
+  },
+  {
+   "fieldname": "modified_time",
+   "fieldtype": "Datetime",
+   "label": "Modified Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-28 17:48:07.169223",
+ "modified_by": "Administrator",
+ "module": "POS master APP",
+ "name": "Meter Reading",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

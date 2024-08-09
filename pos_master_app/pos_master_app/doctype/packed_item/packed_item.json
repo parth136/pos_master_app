@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-28 19:17:25.036977",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "description",
+  "warehouse",
+  "item_code",
+  "item_code_name",
+  "item_name",
+  "ordered_qty",
+  "packed_qty",
+  "parent_detail_docname",
+  "parent_item",
+  "parent_item_name",
+  "picked_qty",
+  "qty",
+  "franchise_doctype_id",
+  "franchise_name",
+  "franchise_code",
+  "creation_time",
+  "modified_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Data",
+   "label": "From Warehouse"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_code_name",
+   "fieldtype": "Data",
+   "label": "Item Code Name"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "ordered_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ordered Qty"
+  },
+  {
+   "fieldname": "packed_qty",
+   "fieldtype": "Float",
+   "label": "Packed Qty"
+  },
+  {
+   "fieldname": "parent_detail_docname",
+   "fieldtype": "Data",
+   "label": "Parent Detail docname"
+  },
+  {
+   "fieldname": "parent_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Parent Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "picked_qty",
+   "fieldtype": "Float",
+   "label": "Picked Qty"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "franchise_doctype_id",
+   "fieldtype": "Data",
+   "label": "franchise_doctype_id"
+  },
+  {
+   "fieldname": "franchise_name",
+   "fieldtype": "Data",
+   "label": "Franchise Name"
+  },
+  {
+   "fieldname": "franchise_code",
+   "fieldtype": "Data",
+   "label": "Franchise Code"
+  },
+  {
+   "fieldname": "creation_time",
+   "fieldtype": "Datetime",
+   "label": "Creation Time"
+  },
+  {
+   "fieldname": "modified_time",
+   "fieldtype": "Datetime",
+   "label": "Modified Time"
+  },
+  {
+   "fieldname": "parent_item_name",
+   "fieldtype": "Data",
+   "label": "Parent Item Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-28 17:49:39.006438",
+ "modified_by": "Administrator",
+ "module": "POS master APP",
+ "name": "Packed Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

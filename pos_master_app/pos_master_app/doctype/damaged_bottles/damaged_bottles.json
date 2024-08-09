@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 11:19:42.316495",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "warehouse",
+  "posted_by",
+  "posting_date",
+  "franchise_doctype_id",
+  "franchise_code",
+  "franchise_name",
+  "creation_time",
+  "modified_time",
+  "damaged_bottle_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Warehouse"
+  },
+  {
+   "fieldname": "posted_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Posted By"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "franchise_doctype_id",
+   "fieldtype": "Data",
+   "label": "franchise_doctype_id"
+  },
+  {
+   "fieldname": "franchise_code",
+   "fieldtype": "Data",
+   "label": "Franchise Code"
+  },
+  {
+   "fieldname": "franchise_name",
+   "fieldtype": "Data",
+   "label": "Franchise Name"
+  },
+  {
+   "fieldname": "creation_time",
+   "fieldtype": "Datetime",
+   "label": "Creation Time"
+  },
+  {
+   "fieldname": "modified_time",
+   "fieldtype": "Datetime",
+   "label": "Modified Time"
+  },
+  {
+   "fieldname": "damaged_bottle_items",
+   "fieldtype": "Table",
+   "label": "Damaged Bottle Items",
+   "options": "Damaged Bottle Items"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-01 10:58:32.871145",
+ "modified_by": "Administrator",
+ "module": "POS master APP",
+ "name": "Damaged Bottles",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:bench_name",
+ "creation": "2024-05-06 16:30:20.730792",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "bench_name",
+  "country",
+  "franchise_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "bench_name",
+   "fieldtype": "Data",
+   "label": "Bench Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "franchise_details",
+   "fieldtype": "Table",
+   "label": "Franchise Details",
+   "options": "POS Franchise"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-06 17:37:39.670947",
+ "modified_by": "Administrator",
+ "module": "POS master APP",
+ "name": "POS Benches",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

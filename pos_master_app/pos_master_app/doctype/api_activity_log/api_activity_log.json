@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-05-13 19:21:27.212950",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "franchise_bench",
+  "api_start_time",
+  "api_end_time",
+  "franchise_wise_activity_log"
+ ],
+ "fields": [
+  {
+   "fieldname": "api_start_time",
+   "fieldtype": "Datetime",
+   "label": "API Start time"
+  },
+  {
+   "fieldname": "api_end_time",
+   "fieldtype": "Datetime",
+   "label": "API End Time"
+  },
+  {
+   "fieldname": "franchise_wise_activity_log",
+   "fieldtype": "Table",
+   "label": "Franchise Wise Activity Log",
+   "options": "API Franchise Wise Log"
+  },
+  {
+   "fieldname": "franchise_bench",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Franchise Bench "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-28 17:52:56.783996",
+ "modified_by": "Administrator",
+ "module": "POS master APP",
+ "name": "API Activity Log",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

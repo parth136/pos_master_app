@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 19:03:14.525883",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "s_warehouse",
+  "t_warehouse",
+  "company",
+  "column_break_aoiu",
+  "franchise_doctype_id",
+  "franchise_code",
+  "franchise_name",
+  "creation_time",
+  "modified_time",
+  "section_break_bqst",
+  "item_code",
+  "item_code_name",
+  "item_name",
+  "item_group",
+  "expense_account",
+  "column_break_idms",
+  "qty",
+  "basic_rate",
+  "amount",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "s_warehouse",
+   "fieldtype": "Data",
+   "label": "Source Warehouse"
+  },
+  {
+   "fieldname": "t_warehouse",
+   "fieldtype": "Data",
+   "label": "Target Warehouse"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "column_break_aoiu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "franchise_doctype_id",
+   "fieldtype": "Data",
+   "label": "franchise_doctype_id"
+  },
+  {
+   "fieldname": "franchise_code",
+   "fieldtype": "Data",
+   "label": "Franchise Code"
+  },
+  {
+   "fieldname": "franchise_name",
+   "fieldtype": "Data",
+   "label": "Franchise Name"
+  },
+  {
+   "fieldname": "creation_time",
+   "fieldtype": "Datetime",
+   "label": "Creation Time"
+  },
+  {
+   "fieldname": "modified_time",
+   "fieldtype": "Datetime",
+   "label": "Modified Time"
+  },
+  {
+   "fieldname": "section_break_bqst",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_code_name",
+   "fieldtype": "Data",
+   "label": "Item Code Name"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Data",
+   "label": "Item Group"
+  },
+  {
+   "fieldname": "expense_account",
+   "fieldtype": "Data",
+   "label": "Difference Account"
+  },
+  {
+   "fieldname": "column_break_idms",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": " Qty"
+  },
+  {
+   "fieldname": "basic_rate",
+   "fieldtype": "Currency",
+   "label": "Basic Rate (as per Stock UOM)"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-02 14:06:25.930445",
+ "modified_by": "Administrator",
+ "module": "POS master APP",
+ "name": "Stock Entry Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

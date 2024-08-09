@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 11:18:30.571681",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "bottle_type",
+  "item_code",
+  "item_code_name",
+  "type_of_damage",
+  "qty",
+  "remarks",
+  "warehouse",
+  "franchise_doctype_id",
+  "franchise_code",
+  "franchise_name",
+  "creation_time",
+  "modified_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "bottle_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bottle Type"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": " Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_code_name",
+   "fieldtype": "Data",
+   "label": "Item Code Name"
+  },
+  {
+   "fieldname": "type_of_damage",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " Type of Damage"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Data",
+   "label": "Warehouse"
+  },
+  {
+   "fieldname": "franchise_doctype_id",
+   "fieldtype": "Data",
+   "label": "franchise_doctype_id"
+  },
+  {
+   "fieldname": "franchise_code",
+   "fieldtype": "Data",
+   "label": "Franchise Code"
+  },
+  {
+   "fieldname": "franchise_name",
+   "fieldtype": "Data",
+   "label": "Franchise Name"
+  },
+  {
+   "fieldname": "creation_time",
+   "fieldtype": "Datetime",
+   "label": "Creation Time"
+  },
+  {
+   "fieldname": "modified_time",
+   "fieldtype": "Datetime",
+   "label": "Modified Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-28 17:47:57.915824",
+ "modified_by": "Administrator",
+ "module": "POS master APP",
+ "name": "Damaged Bottle Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,329 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:",
+ "creation": "2024-05-03 15:34:36.329158",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_info",
+  "customer_group",
+  "customer_group_name",
+  "customer_name",
+  "customer_type",
+  "territory",
+  "type_of_customer",
+  "account_manager",
+  "section_break_ufzgq",
+  "address_description",
+  "average_purchase_time",
+  "default_commission_rate",
+  "credit_status",
+  "default_price_list",
+  "disabled",
+  "posa_discount",
+  "email_id",
+  "first_purchase_date",
+  "lead_name",
+  "gender",
+  "gps_location",
+  "last_purchase_date",
+  "lead_source",
+  "loyalty_program",
+  "loyalty_program_tier",
+  "market_segment",
+  "mobile_no",
+  "next_projected_purchase_date",
+  "outstanding_amount",
+  "pending_bottles",
+  "pending_bottles_count",
+  "primary_address",
+  "referral_company",
+  "default_sales_partner",
+  "status",
+  "time_since_last_purchase",
+  "franchise_doctype_id",
+  "franchise_name",
+  "franchise_code",
+  "creation_time",
+  "modified_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_info",
+   "fieldtype": "Section Break",
+   "options": "fa fa-user"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "bold": 1,
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Customer Name"
+  },
+  {
+   "default": "Company",
+   "fieldname": "customer_type",
+   "fieldtype": "Data",
+   "label": "Customer Type"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Territory",
+   "print_hide": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "Households",
+   "fieldname": "type_of_customer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type of Customer"
+  },
+  {
+   "fieldname": "account_manager",
+   "fieldtype": "Data",
+   "label": "Account Manager"
+  },
+  {
+   "fieldname": "section_break_ufzgq",
+   "fieldtype": "Section Break",
+   "label": "Address Description"
+  },
+  {
+   "fieldname": "address_description",
+   "fieldtype": "Small Text",
+   "label": "Address Description"
+  },
+  {
+   "fieldname": "average_purchase_time",
+   "fieldtype": "Data",
+   "label": "Average Purchase Time (Days)"
+  },
+  {
+   "fieldname": "default_commission_rate",
+   "fieldtype": "Float",
+   "label": "Commission Rate"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "credit_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Credit Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "default_price_list",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "Default Price List"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "posa_discount",
+   "fieldtype": "Float",
+   "label": "Discount %",
+   "non_negative": 1
+  },
+  {
+   "fetch_from": "customer_primary_contact.email_id",
+   "fieldname": "email_id",
+   "fieldtype": "Read Only",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "first_purchase_date",
+   "fieldtype": "Datetime",
+   "label": "First Purchase Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "label": "From Lead",
+   "no_copy": 1,
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "depends_on": "eval:doc.customer_type != 'Company'",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "gps_location",
+   "fieldtype": "Geolocation",
+   "label": "GPS location"
+  },
+  {
+   "fieldname": "last_purchase_date",
+   "fieldtype": "Datetime",
+   "label": "Last Purchase Date",
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "lead_source",
+   "fieldtype": "Select",
+   "label": "Lead Source",
+   "options": "\nStaff\nCustomer Referral\nPromo/ Campaign"
+  },
+  {
+   "fieldname": "loyalty_program",
+   "fieldtype": "Data",
+   "label": "Loyalty Program",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "loyalty_program_tier",
+   "fieldtype": "Data",
+   "label": "Loyalty Program Tier",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "market_segment",
+   "fieldtype": "Data",
+   "label": "Market Segment"
+  },
+  {
+   "fetch_from": "customer_primary_contact.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Read Only",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "next_projected_purchase_date",
+   "fieldtype": "Date",
+   "label": "Next Projected Purchase Date"
+  },
+  {
+   "fieldname": "outstanding_amount",
+   "fieldtype": "Currency",
+   "label": "Outstanding Amount",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "No",
+   "fieldname": "pending_bottles",
+   "fieldtype": "Select",
+   "label": "Pending Bottles",
+   "options": "No\nYes",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "pending_bottles_count",
+   "fieldtype": "Int",
+   "label": "Pending Bottles Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "primary_address",
+   "fieldtype": "Text",
+   "label": "Primary Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "default_sales_partner",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "Sales Partner"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "time_since_last_purchase",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time Since Last Purchase",
+   "read_only": 1
+  },
+  {
+   "fieldname": "franchise_doctype_id",
+   "fieldtype": "Data",
+   "label": "franchise_doctype_id"
+  },
+  {
+   "fieldname": "franchise_name",
+   "fieldtype": "Data",
+   "label": "Franchise Name"
+  },
+  {
+   "fieldname": "franchise_code",
+   "fieldtype": "Data",
+   "label": "Franchise Code"
+  },
+  {
+   "fieldname": "creation_time",
+   "fieldtype": "Datetime",
+   "label": "Creation Time"
+  },
+  {
+   "fieldname": "modified_time",
+   "fieldtype": "Datetime",
+   "label": "Modified Time"
+  },
+  {
+   "fieldname": "customer_group_name",
+   "fieldtype": "Data",
+   "label": "Customer Group Name"
+  },
+  {
+   "fieldname": "referral_company",
+   "fieldtype": "Data",
+   "label": "Referral Company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-28 17:46:26.282970",
+ "modified_by": "Administrator",
+ "module": "POS master APP",
+ "name": "Customer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

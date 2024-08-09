@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-03 16:41:39.469810",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_group_name",
+  "parent_customer_group_name",
+  "parent_customer_group",
+  "is_group",
+  "cb0",
+  "default_price_list",
+  "lft",
+  "rgt",
+  "old_parent",
+  "franchise_doctype_id",
+  "franchise_name",
+  "franchise_code",
+  "creation_time",
+  "modified_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "lft",
+   "no_copy": 1,
+   "oldfieldname": "lft",
+   "oldfieldtype": "Int",
+   "print_hide": 1,
+   "report_hide": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "rgt",
+   "no_copy": 1,
+   "oldfieldname": "rgt",
+   "oldfieldtype": "Int",
+   "print_hide": 1,
+   "report_hide": 1,
+   "search_index": 1
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "description": "Only leaf nodes are allowed in transaction",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Group",
+   "oldfieldname": "is_group",
+   "oldfieldtype": "Select"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "ignore_user_permissions": 1,
+   "label": "old_parent",
+   "no_copy": 1,
+   "oldfieldname": "old_parent",
+   "oldfieldtype": "Data",
+   "options": "Customer Group",
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "parent_customer_group",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "Parent Customer Group",
+   "oldfieldname": "parent_customer_group",
+   "oldfieldtype": "Link",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "customer_group_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Group Name",
+   "oldfieldname": "customer_group_name",
+   "oldfieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_price_list",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "Default Price List"
+  },
+  {
+   "fieldname": "parent_customer_group_name",
+   "fieldtype": "Data",
+   "label": "Parent Customer Group Name"
+  },
+  {
+   "fieldname": "franchise_doctype_id",
+   "fieldtype": "Data",
+   "label": "franchise_doctype_id"
+  },
+  {
+   "fieldname": "franchise_name",
+   "fieldtype": "Data",
+   "label": "Franchise Name"
+  },
+  {
+   "fieldname": "franchise_code",
+   "fieldtype": "Data",
+   "label": "Franchise Code"
+  },
+  {
+   "fieldname": "creation_time",
+   "fieldtype": "Datetime",
+   "label": "Creation Time"
+  },
+  {
+   "fieldname": "modified_time",
+   "fieldtype": "Datetime",
+   "label": "Modified Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-06-28 17:46:43.210080",
+ "modified_by": "Administrator",
+ "module": "POS master APP",
+ "name": "Customer Group",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_customer_group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

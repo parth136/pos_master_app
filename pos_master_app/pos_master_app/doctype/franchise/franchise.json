@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "autoname": "format:S{####}",
+ "creation": "2024-05-06 15:57:02.725396",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "domain_name",
+  "franchise_naming_series",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "domain_name",
+   "fieldtype": "Data",
+   "label": "Domain name"
+  },
+  {
+   "fieldname": "franchise_naming_series",
+   "fieldtype": "Data",
+   "label": "Franchise Naming Series",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Live\nDeleted"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-06 15:57:02.725396",
+ "modified_by": "Administrator",
+ "module": "POS master APP",
+ "name": "Franchise",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

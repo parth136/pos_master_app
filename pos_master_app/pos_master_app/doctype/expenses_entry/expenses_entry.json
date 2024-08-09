@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-27 10:46:08.392086",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "posting_date",
+  "is_payment",
+  "book_an_expense",
+  "mode_of_payment",
+  "liability_or_asset_account",
+  "payment_currency",
+  "project",
+  "default_cost_center",
+  "total",
+  "franchise_doctype_id",
+  "franchise_code",
+  "franchise_name",
+  "creation_time",
+  "modified_time",
+  "expenses_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_payment",
+   "fieldtype": "Check",
+   "label": "Is Payment?"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:!doc.is_payment && doc.company",
+   "fieldname": "book_an_expense",
+   "fieldtype": "Check",
+   "label": "Book an Expense?"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mode of Payment"
+  },
+  {
+   "fieldname": "liability_or_asset_account",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account (Credit)"
+  },
+  {
+   "fieldname": "payment_currency",
+   "fieldtype": "Data",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Default Project"
+  },
+  {
+   "fieldname": "default_cost_center",
+   "fieldtype": "Data",
+   "label": "Default Cost Center"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total"
+  },
+  {
+   "fieldname": "franchise_doctype_id",
+   "fieldtype": "Data",
+   "label": "franchise_doctype_id"
+  },
+  {
+   "fieldname": "franchise_code",
+   "fieldtype": "Data",
+   "label": "Franchise Code"
+  },
+  {
+   "fieldname": "franchise_name",
+   "fieldtype": "Data",
+   "label": "Franchise Name"
+  },
+  {
+   "fieldname": "creation_time",
+   "fieldtype": "Datetime",
+   "label": "Creation Time"
+  },
+  {
+   "fieldname": "modified_time",
+   "fieldtype": "Datetime",
+   "label": "Modified Time"
+  },
+  {
+   "fieldname": "expenses_item",
+   "fieldtype": "Table",
+   "label": "Expenses",
+   "options": "Expenses Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-28 17:48:22.288499",
+ "modified_by": "Administrator",
+ "module": "POS master APP",
+ "name": "Expenses Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

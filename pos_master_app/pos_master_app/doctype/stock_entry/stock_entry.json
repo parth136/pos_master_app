@@ -1,0 +1,225 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-06-28 19:04:54.700819",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "naming_series",
+  "posting_date",
+  "posting_time",
+  "stock_entry_type",
+  "pending_bottle_ref",
+  "column_break_hfsk",
+  "customer",
+  "customer_name",
+  "purpose",
+  "damaged_bottle",
+  "damaged_bottle_name",
+  "type_of_damage",
+  "section_break_jqcp",
+  "franchise_doctype_id",
+  "franchise_name",
+  "franchise_code",
+  "column_break_pcoe",
+  "creation_time",
+  "modified_time",
+  "default_warehouse_section",
+  "from_warehouse",
+  "column_break_fwwa",
+  "to_warehouse",
+  "items_section",
+  "stock_entry_detail",
+  "supplier_details_section",
+  "supplier",
+  "supplier_name",
+  "section_break_qguo",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Posting Time"
+  },
+  {
+   "fieldname": "stock_entry_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stock Entry Type"
+  },
+  {
+   "fieldname": "pending_bottle_ref",
+   "fieldtype": "Data",
+   "label": "Pending Bottle Ref"
+  },
+  {
+   "fieldname": "column_break_hfsk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Purpose",
+   "options": "Material Issue\nMaterial Receipt\nMaterial Transfer\nMaterial Transfer for Manufacture\nMaterial Consumption for Manufacture\nManufacture\nRepack\nSend to Subcontractor"
+  },
+  {
+   "fieldname": "damaged_bottle",
+   "fieldtype": "Link",
+   "label": "Damaged Bottle",
+   "options": "Damaged Bottles"
+  },
+  {
+   "fieldname": "damaged_bottle_name",
+   "fieldtype": "Data",
+   "label": "Damaged Bottle Name"
+  },
+  {
+   "fieldname": "type_of_damage",
+   "fieldtype": "Data",
+   "label": "Type of Damage"
+  },
+  {
+   "fieldname": "section_break_jqcp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "franchise_doctype_id",
+   "fieldtype": "Data",
+   "label": "franchise_doctype_id"
+  },
+  {
+   "fieldname": "franchise_name",
+   "fieldtype": "Data",
+   "label": "Franchise Name"
+  },
+  {
+   "fieldname": "franchise_code",
+   "fieldtype": "Data",
+   "label": "Franchise Code"
+  },
+  {
+   "fieldname": "column_break_pcoe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "creation_time",
+   "fieldtype": "Datetime",
+   "label": "Creation Time"
+  },
+  {
+   "fieldname": "modified_time",
+   "fieldtype": "Datetime",
+   "label": "Modified Time"
+  },
+  {
+   "fieldname": "default_warehouse_section",
+   "fieldtype": "Section Break",
+   "label": "Default Warehouse"
+  },
+  {
+   "fieldname": "from_warehouse",
+   "fieldtype": "Data",
+   "label": "Default Source Warehouse"
+  },
+  {
+   "fieldname": "column_break_fwwa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_warehouse",
+   "fieldtype": "Data",
+   "label": "Default Target Warehouse"
+  },
+  {
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "stock_entry_detail",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Stock Entry Detail"
+  },
+  {
+   "fieldname": "supplier_details_section",
+   "fieldtype": "Section Break",
+   "label": "Supplier Details"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "label": "Supplier"
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name"
+  },
+  {
+   "fieldname": "section_break_qguo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-28 19:05:12.180914",
+ "modified_by": "Administrator",
+ "module": "POS master APP",
+ "name": "Stock Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
