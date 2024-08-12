@@ -498,11 +498,15 @@ document_mappings = {
 @frappe.whitelist()
 # Schedular Which Fetch Bench Wise Call Function to call data
 def master_enq_pos_data():
+    # JibuUganda = bench name
     # Fetch all POS Benches with their names and countries
     all_benches = frappe.get_all("POS Benches", fields=["name","country"])
     # Enqueue data fetching for each POS Bench
+    print("===================")
     for bench in all_benches:
         frappe.enqueue('pos_master_app.pos_master_app.api.api.get_pos_data_site_wise', queue='short',timeout=3600, franchise_bench=bench.name)
+        print(bench.name, bench.country)
+    print("===================")
     # Return success status
     return {"status":"sucessfull","message":"POS Bench data started importing!"}
 
